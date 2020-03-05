@@ -29,6 +29,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -41,7 +45,7 @@ body {
 
 #wrapper {
   max-width: 1200px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   display: flex;
   margin: 0 auto;
 }
@@ -74,6 +78,42 @@ body {
   border-radius: 100%;
   margin-bottom: 50px;
   filter: brightness(1.1);
+}
+#wrapper aside nav {
+  margin-top: 50px;
+  width: 100%;
+  padding: 15px 5px;
+  border-top: 1px solid #316334;
+  border-bottom: 1px solid #316334;
+}
+#wrapper aside nav li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  height: 50px;
+}
+#wrapper aside nav li a {
+  text-transform: uppercase;
+  font-size: 0.94rem;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px 0;
+  color: #FFF;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 2.5rem;
+}
+#wrapper aside nav li a.active {
+  background: #39783c;
+}
+#wrapper aside nav li a:hover {
+  background: #39783c;
+  transition: all 0.4s ease-out;
 }
 
 /*# sourceMappingURL=App.css.map */
