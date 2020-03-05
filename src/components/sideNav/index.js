@@ -10,7 +10,6 @@ const sideNav = () => (
     </div>
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
         <li><a href="/">About</a></li>
         <li><a href="/">Resume</a></li>
         <li><a href="/">Portfolios</a></li>

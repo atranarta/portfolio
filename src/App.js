@@ -8,7 +8,11 @@ function App() {
     <div className="App">
       <div id="wrapper">
         <SideNav />
-        <About />
+        <main>
+          <div className="border">
+            <About />
+          </div>
+        </main>
       </div>
     </div>
   );

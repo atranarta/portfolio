@@ -1,7 +1,20 @@
 @charset "UTF-8";
+
+$gold-gradient: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+$dark-green: #275129;
+$dark-gold: #D89F2D;
+$light-gold: #E9DB8A;
+
 html {
   box-sizing: border-box;
   font-size: 16px;
+}
+
+body,
+html,
+#id {
+  height: 100%;
 }
 
 *,
@@ -41,24 +54,36 @@ img {
 
 body {
   background-image: url(../src/img/banana-leaves-pattern-tropical-background-vector-14381131.jpg);
+  background-repeat: repeat;
   position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: -1;
+  }
 }
 
 #wrapper {
-  max-width: 1200px;
+  width: 1200px;
   font-family: 'Nunito Sans', sans-serif;
-  display: flex;
   margin: 0 auto;
+  padding: 50px;
+  height: 100%;
 
   aside {
-    width: 240px;
+    width: 260px;
     position: fixed;
     height: 100%;
-    background-color: #275129;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: $dark-green;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #FFF;
     margin-right: 20px;
-    
+
     .heading {
       position: relative;
       padding: 30px;
@@ -68,11 +93,11 @@ body {
         position: relative;
         width: 186px;
         height: 186px;
-        background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        background: $gold-gradient;
         border-radius: 100%;
         text-align: center;
-        
+        margin-bottom: 40px;
+
         .avatar {
           position: absolute;
           top: 8px;
@@ -112,17 +137,146 @@ body {
           font-weight: 200;
           font-size: 18px;
           line-height: 2.5rem;
+          outline: none;
 
           &.active {
             background: #39783c;
           }
-  
+
           &:hover {
             background: #39783c;
             transition: all .4s ease-out;
           }
         }
+      }
+    }
+  }
 
+  main {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    font-size: 18px;
+
+    .border {
+      padding: 40px 20px;
+      border-left: 5px solid $dark-gold;
+      border-right: 5px solid $light-gold;
+      background-image: linear-gradient(90deg, $dark-gold, $light-gold), linear-gradient(90deg, $dark-gold, $light-gold);
+      background-size: 100% 5px;
+      background-position: 0 0, 0 100%;
+      background-repeat: no-repeat;
+
+      .component {
+        .title {
+          position: relative;
+
+          h1 {
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            z-index: 999;
+            font-size: 2.57rem;
+            line-height: 3.2857rem;
+          }
+
+          span {
+            font-size: 4.5rem;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            line-height: 1;
+            font-weight: 900;
+            color: $dark-green;
+            display: inline-block;
+            text-transform: uppercase;
+            z-index: -1;
+            -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            white-space: nowrap;
+          }
+        }
+
+        h2 {
+          text-align: right;
+          font-size: 2rem;
+          line-height: 2.7rem;
+          margin-bottom: 20px;
+
+          span {
+            color: $dark-green;
+          }
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        ul {
+
+          li {
+
+            b {
+              width: 120px;
+              display: inline-block;
+              position: relative;
+              margin-right: 10px;
+
+              &::after {
+                content: ":";
+                position: absolute;
+                top: 0;
+                left: auto;
+                right: 0;
+              }
+            }
+
+            span {
+              display: inline-block;
+              width: 360px;
+            }
+          }
+        }
+      }
+    }
+
+    a.btn {
+      margin-top: 30px;
+      background-color: $dark-green;
+      color: #FFF;
+      text-transform: uppercase;
+      padding: 0 30px;
+      display: inline-block;
+      font-size: .9rem;
+      letter-spacing: 2px;
+      height: 50px;
+      line-height: 50px;
+      border: 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+      }
+
+      &:hover {
+        transition: all .4s ease-out;
+
+        &::before {
+          transform: scaleX(1);
+          transition: all .4s ease-out;
+          background: $dark-gold;
+        }
       }
     }
   }

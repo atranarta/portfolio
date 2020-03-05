@@ -1,10 +1,21 @@
 import React from 'react';
 
 const About = () => (
-  <div className="main">
-    <h1>Hi, I am Tetiana Rabiievska</h1>
-    <p>I am a frontend web developer. I can provide clean code and pixel perfect design.
-    I also make website more &#38; more interactive with web animations.</p>
+  <div id="about" className="component">
+    <div className="title">
+      <h1>About me</h1>
+      <span>About me</span>
+    </div>
+    <h2>I am <span>Tetiana Rabiievska</span></h2>
+    <p>I am a frontend web developer. I can provide clean code and pixel perfect design. 
+      I also make website more &amp; more interactive.</p>
+    <ul>
+      <li><b>Full Name</b><span>Tetiana Rabiievska</span></li>
+      <li><b>Age</b><span>30</span></li>
+      <li><b>Languages</b><span>Ukrainian (native), Russian (Proficient), English (Upper Intermediate), German (Upper Intermediate), Polnish (Elementary)</span></li>
+      <li><b>Address</b><span>Elsenstr. 23, 12435, Berlin, Germany</span></li>
+    </ul>
+    <a className="btn" href="/">Download CV</a>
   </div>
 );
 
