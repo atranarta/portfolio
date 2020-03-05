@@ -1,0 +1,83 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-image: url(../src/img/banana-leaves-pattern-tropical-background-vector-14381131.jpg);
+  position: relative;
+}
+
+#wrapper {
+  max-width: 1200px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  margin: 0 auto;
+
+  aside {
+    width: 240px;
+    position: fixed;
+    height: 100%;
+    background-color: #275129;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    color: #FFF;
+    margin-right: 20px;
+    
+    .heading {
+      position: relative;
+      padding: 30px;
+      text-align: center;
+
+      .avatar-wrap {
+        position: relative;
+        width: 186px;
+        height: 186px;
+        background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        border-radius: 100%;
+        text-align: center;
+        
+        .avatar {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          border-radius: 100%;
+          margin-bottom: 50px;
+          filter: brightness(1.1);
+        }
+      }
+    }
+  }
+}
