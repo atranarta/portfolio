@@ -3,6 +3,7 @@
 $gold-gradient: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 $dark-green: #275129;
+$light-green: #39783c;
 $dark-gold: #D89F2D;
 $light-gold: #E9DB8A;
 
@@ -104,8 +105,8 @@ body {
       margin-top: 50px;
       width: 100%;
       padding: 15px 5px;
-      border-top: 1px solid #316334;
-      border-bottom: 1px solid #316334;
+      border-top: 1px solid $light-green;
+      border-bottom: 1px solid $light-green;
 
       li {
         list-style: none;
@@ -131,11 +132,11 @@ body {
           outline: none;
 
           &.active {
-            background: #39783c;
+            background: $light-green;
           }
 
           &:hover {
-            background: #39783c;
+            background: $light-green;
             transition: all .4s ease-out;
           }
         }
