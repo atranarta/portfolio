@@ -217,6 +217,7 @@ body {
               display: inline-block;
               position: relative;
               margin-right: 10px;
+              vertical-align: top;
 
               &::after {
                 content: ":";

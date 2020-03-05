@@ -189,6 +189,7 @@ body {
   display: inline-block;
   position: relative;
   margin-right: 10px;
+  vertical-align: top;
 }
 #wrapper main .border .component ul li b::after {
   content: ":";
