@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SideNav from "./components/sideNav";
 import About from "./components/about";
+import Resume from "./components/resume";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
         <main>
           <div className="border">
             <About />
+          </div>
+          <div className="border">
+            <Resume />
           </div>
         </main>
       </div>
