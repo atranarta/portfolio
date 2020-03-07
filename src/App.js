@@ -3,6 +3,7 @@ import './App.css';
 import SideNav from "./components/sideNav";
 import About from "./components/about";
 import Resume from "./components/resume";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <div className="border">
             <About />
             <Resume />
+            <Contact />
           </div>
         </main>
       </div>
