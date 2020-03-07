@@ -220,10 +220,29 @@ body {
           font-size: 1.71rem;
           line-height: 2.43rem;
         }
+
+        button, input, select {
+          height: 50px;
+          padding: 0 15px;
+        }
+
+        input, select, textarea {
+          width: 100%;
+          font-size: 14px;
+          vertical-align: middle;
+        }
+
+        input, select, textarea, button {
+          outline: none;
+        }
+
+        textarea {
+          padding: 10px 15px;
+        }
       }
     }
 
-    a.btn {
+    .btn {
       margin-top: 30px;
       background-color: $dark-green;
       color: #FFF;
@@ -236,6 +255,7 @@ body {
       line-height: 50px;
       border: 0;
       position: relative;
+      cursor: pointer;
 
       &::before {
         content: "";
@@ -334,7 +354,36 @@ body {
     #contact {
 
       form {
-        
+
+        .form-field {
+          margin-top: 30px;
+          position: relative;
+
+          label {
+            position: absolute;
+            left: 15px;
+            top: -13px;
+            background: $dark-green;
+            color: #FFF;
+            -webkit-transition: all .4s ease-out;
+            transition: all .4s ease-out;
+            pointer-events: none;
+            padding: 0 10px;
+            font-size: .94rem;
+          }
+
+          input, textarea {
+            border: 1px solid $dark-green;
+            font-size: 1rem;
+            height: 50px;
+            padding: 0 15px;
+          }
+
+          textarea {
+            height: 190px;
+            padding: 10px 15px;
+          }
+        }
       }
     }
   }

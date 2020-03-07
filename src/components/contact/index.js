@@ -24,6 +24,9 @@ const Contact = () => (
         <label for="contact-form-message">Enter your message</label>
         <textarea type="text" name="name" id="contact-form-message" cols="30" rows="6"></textarea>
       </div>
+      <div className="form-field">
+        <button className="btn" type="submit">Send Mail</button>
+      </div>
     </form>
   </div>
 );

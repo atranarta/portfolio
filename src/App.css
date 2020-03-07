@@ -195,7 +195,22 @@ body {
   font-size: 1.71rem;
   line-height: 2.43rem;
 }
-#wrapper main a.btn {
+#wrapper main .border .component button, #wrapper main .border .component input, #wrapper main .border .component select {
+  height: 50px;
+  padding: 0 15px;
+}
+#wrapper main .border .component input, #wrapper main .border .component select, #wrapper main .border .component textarea {
+  width: 100%;
+  font-size: 14px;
+  vertical-align: middle;
+}
+#wrapper main .border .component input, #wrapper main .border .component select, #wrapper main .border .component textarea, #wrapper main .border .component button {
+  outline: none;
+}
+#wrapper main .border .component textarea {
+  padding: 10px 15px;
+}
+#wrapper main .btn {
   margin-top: 30px;
   background-color: #275129;
   color: #FFF;
@@ -208,8 +223,9 @@ body {
   line-height: 50px;
   border: 0;
   position: relative;
+  cursor: pointer;
 }
-#wrapper main a.btn::before {
+#wrapper main .btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -218,10 +234,10 @@ body {
   height: 2px;
   width: 100%;
 }
-#wrapper main a.btn:hover {
+#wrapper main .btn:hover {
   transition: all 0.4s ease-out;
 }
-#wrapper main a.btn:hover::before {
+#wrapper main .btn:hover::before {
   transform: scaleX(1);
   transition: all 0.4s ease-out;
   background: #D89F2D;
@@ -277,6 +293,32 @@ body {
   top: 0;
   height: 100%;
   background: #275129;
+}
+#wrapper main #contact form .form-field {
+  margin-top: 30px;
+  position: relative;
+}
+#wrapper main #contact form .form-field label {
+  position: absolute;
+  left: 15px;
+  top: -13px;
+  background: #275129;
+  color: #FFF;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  pointer-events: none;
+  padding: 0 10px;
+  font-size: 0.94rem;
+}
+#wrapper main #contact form .form-field input, #wrapper main #contact form .form-field textarea {
+  border: 1px solid #275129;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 15px;
+}
+#wrapper main #contact form .form-field textarea {
+  height: 190px;
+  padding: 10px 15px;
 }
 
 /*# sourceMappingURL=App.css.map */
