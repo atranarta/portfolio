@@ -13,7 +13,7 @@ const About = () => (
       <li><b>Full Name</b><span>Tetiana Rabiievska</span></li>
       <li><b>Age</b><span>30</span></li>
       <li><b>Languages</b><span>Ukrainian (Native), Russian (Fluent), English (Upper Intermediate), German (Upper Intermediate), Polish (Elementary)</span></li>
-      <li><b>Address</b><span>Berlin, Germany</span></li>
+      <li><b>Location</b><span>Berlin, Germany</span></li>
     </ul>
     <a className="btn" href="/">Download CV</a>
   </div>

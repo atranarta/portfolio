@@ -161,6 +161,8 @@ body {
       background-repeat: no-repeat;
 
       .component {
+        margin-bottom: 80px;
+
         .title {
           position: relative;
 
@@ -209,31 +211,9 @@ body {
           margin-bottom: 1rem;
         }
 
-        ul {
-
-          li {
-
-            b {
-              width: 120px;
-              display: inline-block;
-              position: relative;
-              margin-right: 10px;
-              vertical-align: top;
-
-              &::after {
-                content: ":";
-                position: absolute;
-                top: 0;
-                left: auto;
-                right: 0;
-              }
-            }
-
-            span {
-              display: inline-block;
-              width: 600px;
-            }
-          }
+        h6 {
+          font-size: 1.14rem;
+          line-height: 1.857rem;
         }
       }
     }
@@ -269,6 +249,79 @@ body {
           transform: scaleX(1);
           transition: all .4s ease-out;
           background: $dark-gold;
+        }
+      }
+    }
+
+    #about {
+      ul {
+
+        li {
+
+          b {
+            width: 120px;
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            vertical-align: top;
+
+            &::after {
+              content: ":";
+              position: absolute;
+              top: 0;
+              left: auto;
+              right: 0;
+            }
+          }
+
+          span {
+            display: inline-block;
+            width: 600px;
+          }
+        }
+      }
+    }
+
+    #resume {
+
+      .skills-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        .progress-wrap {
+          flex: 0 0 50%;
+          max-width: 50%;
+          margin-top: 30px;
+
+          .progress-title {
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+
+          .progress {
+            display: flex;
+            align-items: center;
+
+            .progress-percentage {
+              flex: 0 0 60px;
+            }
+
+            .progress-container {
+              background: #ababab;
+              display: block;
+              height: 6px;
+              width: 75%;
+              position: relative;
+
+              .progress-active {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background: $dark-green;
+              }
+            }
+          }
         }
       }
     }

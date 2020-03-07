@@ -142,6 +142,9 @@ body {
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
 }
+#wrapper main .border .component {
+  margin-bottom: 80px;
+}
 #wrapper main .border .component .title {
   position: relative;
 }
@@ -184,23 +187,9 @@ body {
 #wrapper main .border .component p {
   margin-bottom: 1rem;
 }
-#wrapper main .border .component ul li b {
-  width: 120px;
-  display: inline-block;
-  position: relative;
-  margin-right: 10px;
-  vertical-align: top;
-}
-#wrapper main .border .component ul li b::after {
-  content: ":";
-  position: absolute;
-  top: 0;
-  left: auto;
-  right: 0;
-}
-#wrapper main .border .component ul li span {
-  display: inline-block;
-  width: 600px;
+#wrapper main .border .component h6 {
+  font-size: 1.14rem;
+  line-height: 1.857rem;
 }
 #wrapper main a.btn {
   margin-top: 30px;
@@ -232,6 +221,58 @@ body {
   transform: scaleX(1);
   transition: all 0.4s ease-out;
   background: #D89F2D;
+}
+#wrapper main #about ul li b {
+  width: 120px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  vertical-align: top;
+}
+#wrapper main #about ul li b::after {
+  content: ":";
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+}
+#wrapper main #about ul li span {
+  display: inline-block;
+  width: 600px;
+}
+#wrapper main #resume .skills-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrapper main #resume .skills-box .progress-wrap {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+#wrapper main #resume .skills-box .progress-wrap .progress-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#wrapper main #resume .skills-box .progress-wrap .progress {
+  display: flex;
+  align-items: center;
+}
+#wrapper main #resume .skills-box .progress-wrap .progress .progress-percentage {
+  flex: 0 0 60px;
+}
+#wrapper main #resume .skills-box .progress-wrap .progress .progress-container {
+  background: #ababab;
+  display: block;
+  height: 6px;
+  width: 75%;
+  position: relative;
+}
+#wrapper main #resume .skills-box .progress-wrap .progress .progress-container .progress-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #275129;
 }
 
 /*# sourceMappingURL=App.css.map */

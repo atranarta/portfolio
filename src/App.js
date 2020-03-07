@@ -12,8 +12,6 @@ function App() {
         <main>
           <div className="border">
             <About />
-          </div>
-          <div className="border">
             <Resume />
           </div>
         </main>
