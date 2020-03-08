@@ -3,6 +3,7 @@ import './App.css';
 import SideNav from "./components/sideNav";
 import About from "./components/about";
 import Resume from "./components/resume";
+import Portfolios from "./components/portfolios";
 import Contact from "./components/contact";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <div className="border">
             <About />
             <Resume />
+            <Portfolios />
             <Contact />
           </div>
         </main>

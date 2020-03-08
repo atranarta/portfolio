@@ -294,6 +294,10 @@ body {
   height: 100%;
   background: #275129;
 }
+#wrapper main #portfolios .portfolios-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 #wrapper main #contact form .form-field {
   margin-top: 30px;
   position: relative;

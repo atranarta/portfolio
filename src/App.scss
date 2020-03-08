@@ -351,6 +351,14 @@ body {
       }
     }
 
+    #portfolios {
+
+      .portfolios-wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
     #contact {
 
       form {
