@@ -356,6 +356,12 @@ body {
       .portfolios-wrap {
         display: flex;
         flex-wrap: wrap;
+        flex: 0 0 33.333333%;
+
+
+        .portfolios-box {
+          width: 33.333333%;
+        }
       }
     }
 
