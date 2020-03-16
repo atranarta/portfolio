@@ -211,28 +211,42 @@ body {
           margin-bottom: 1rem;
         }
 
-        h6 {
-          font-size: 1.14rem;
-          line-height: 1.857rem;
-        }
-
         h4 {
           font-size: 1.71rem;
           line-height: 2.43rem;
         }
 
-        button, input, select {
+        h5 {
+          font-size: 1.43rem;
+          line-height: 2.14rem;
+          font-weight: 700;
+        }
+
+        h6 {
+          font-size: 1.14rem;
+          line-height: 1.857rem;
+        }
+
+
+        button,
+        input,
+        select {
           height: 50px;
           padding: 0 15px;
         }
 
-        input, select, textarea {
+        input,
+        select,
+        textarea {
           width: 100%;
           font-size: 14px;
           vertical-align: middle;
         }
 
-        input, select, textarea, button {
+        input,
+        select,
+        textarea,
+        button {
           outline: none;
         }
 
@@ -358,9 +372,106 @@ body {
         flex-wrap: wrap;
         flex: 0 0 33.333333%;
 
-
         .portfolios-box {
           width: 33.333333%;
+
+          .potfolio-image {
+            position: relative;
+            position: relative;
+            width: 230px;
+            height: 130px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+
+            &::before {
+              content: "";
+              position: absolute;
+              left: 15px;
+              top: 15px;
+              height: calc(100% - 30px);
+              width: calc(100% - 30px);
+              background: hsla(0, 0%, 100%, .9);
+              -webkit-transition: all .4s ease-out;
+              transition: all .4s ease-out;
+              -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+              -webkit-transform-origin: 0;
+              transform-origin: 0;
+            }
+
+            img {
+              vertical-align: middle;
+              min-height: 100%;
+              min-width: 100%;
+            }
+
+            ul {
+              margin-bottom: 0;
+              padding-left: 0;
+              position: absolute;
+              left: 0;
+              top: 50%;
+              text-align: center;
+              width: 100%;
+              -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+              visibility: hidden;
+              opacity: 0;
+              margin-top: 30px;
+              -webkit-transition: all .4s ease-in-out .2s;
+              transition: all .4s ease-in-out .2s;
+
+              li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 7px;
+
+                button,
+                a {
+                  cursor: pointer;
+                  display: inline-block;
+                  height: 45px;
+                  width: 45px;
+                  padding: 5px 0;
+                  vertical-align: middle;
+                  text-align: center;
+                  line-height: 1;
+                  background: #a4acc4;
+                  color: #fff;
+                  border: 1px solid #a4acc4;
+                  border-radius: 100px;
+                  outline: none;
+                  font-size: 1.25rem;
+                  -webkit-transition: all .4s ease-out;
+                  transition: all .4s ease-out;
+
+                  svg {
+                    vertical-align: middle;
+                    overflow: hidden;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              &::before {
+                transform: scaleX(1);
+              }
+
+              ul {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 0;
+              }
+            }
+          }
+
+          p {
+            font-size: 1.14rem;
+            line-height: 1.857rem;
+          }
         }
       }
     }
@@ -386,7 +497,8 @@ body {
             font-size: .94rem;
           }
 
-          input, textarea {
+          input,
+          textarea {
             border: 1px solid $dark-green;
             font-size: 1rem;
             height: 50px;

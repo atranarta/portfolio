@@ -187,24 +187,36 @@ body {
 #wrapper main .border .component p {
   margin-bottom: 1rem;
 }
-#wrapper main .border .component h6 {
-  font-size: 1.14rem;
-  line-height: 1.857rem;
-}
 #wrapper main .border .component h4 {
   font-size: 1.71rem;
   line-height: 2.43rem;
 }
-#wrapper main .border .component button, #wrapper main .border .component input, #wrapper main .border .component select {
+#wrapper main .border .component h5 {
+  font-size: 1.43rem;
+  line-height: 2.14rem;
+  font-weight: 700;
+}
+#wrapper main .border .component h6 {
+  font-size: 1.14rem;
+  line-height: 1.857rem;
+}
+#wrapper main .border .component button,
+#wrapper main .border .component input,
+#wrapper main .border .component select {
   height: 50px;
   padding: 0 15px;
 }
-#wrapper main .border .component input, #wrapper main .border .component select, #wrapper main .border .component textarea {
+#wrapper main .border .component input,
+#wrapper main .border .component select,
+#wrapper main .border .component textarea {
   width: 100%;
   font-size: 14px;
   vertical-align: middle;
 }
-#wrapper main .border .component input, #wrapper main .border .component select, #wrapper main .border .component textarea, #wrapper main .border .component button {
+#wrapper main .border .component input,
+#wrapper main .border .component select,
+#wrapper main .border .component textarea,
+#wrapper main .border .component button {
   outline: none;
 }
 #wrapper main .border .component textarea {
@@ -302,6 +314,93 @@ body {
 #wrapper main #portfolios .portfolios-wrap .portfolios-box {
   width: 33.333333%;
 }
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
+  position: relative;
+  position: relative;
+  width: 230px;
+  height: 130px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image img {
+  vertical-align: middle;
+  min-height: 100%;
+  min-width: 100%;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 30px;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+  transition: all 0.4s ease-in-out 0.2s;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 7px;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button,
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a {
+  cursor: pointer;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  padding: 5px 0;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1;
+  background: #a4acc4;
+  color: #fff;
+  border: 1px solid #a4acc4;
+  border-radius: 100px;
+  outline: none;
+  font-size: 1.25rem;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button svg,
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a svg {
+  vertical-align: middle;
+  overflow: hidden;
+  height: 100%;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover::before {
+  transform: scaleX(1);
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover ul {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+#wrapper main #portfolios .portfolios-wrap .portfolios-box p {
+  font-size: 1.14rem;
+  line-height: 1.857rem;
+}
 #wrapper main #contact form .form-field {
   margin-top: 30px;
   position: relative;
@@ -318,7 +417,8 @@ body {
   padding: 0 10px;
   font-size: 0.94rem;
 }
-#wrapper main #contact form .form-field input, #wrapper main #contact form .form-field textarea {
+#wrapper main #contact form .form-field input,
+#wrapper main #contact form .form-field textarea {
   border: 1px solid #275129;
   font-size: 1rem;
   height: 50px;
