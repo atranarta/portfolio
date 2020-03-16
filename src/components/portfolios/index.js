@@ -13,21 +13,21 @@ const Portfolios = (props) => (
     <div className="portfolios-wrap">
       <Portfolio
         img={Lotto_game}
-        imageTitle='Lotto Game'
-        title='Lotto Game'
-        text='A Lotto-game created using HTML, CSS and Javascript (by me and two more persons)'
+        imageTitle="Lotto Game"
+        title="Lotto Game"
+        text="A Lotto-game created using HTML, CSS and Javascript (by me and two more persons)"
       />
       <Portfolio
         img={Calculator}
-        imageTitle='Calculator'
-        title='Calculator'
-        text='A calculator created using React and SCSS'
+        imageTitle="Calculator"
+        title="Calculator"
+        text="A calculator created using React and SCSS"
       />
       <Portfolio
         img={ToDo_List}
-        imageTitle='ToDo List'
-        title='ToDo List'
-        text='A calculator created using React and SCSSA ToDo List created using React, Javascript and SCSS'
+        imageTitle="ToDo List"
+        title="ToDo List"
+        text="A calculator created using React and SCSSA ToDo List created using React, Javascript and SCSS"
       />
     </div>
   </div>
