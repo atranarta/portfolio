@@ -15,7 +15,7 @@ const About = () => (
       <li><b>Languages</b><span>English (Professional working proficiency), German (Upper Intermediate), Ukrainian (Native), Russian (Native), Polish (Elementary)</span></li>
       <li><b>Location</b><span>Berlin, Germany</span></li>
     </ul>
-    <a className="btn" href="/">Download CV</a>
+    <a className="btn" href="./../../img/Tetiana Rabiievska.pdf" download>Download CV</a>
   </div>
 );
 
