@@ -291,14 +291,11 @@ body {
   display: flex;
   align-items: center;
 }
-#wrapper main #resume .skills-box .progress-wrap .progress .progress-percentage {
-  flex: 0 0 60px;
-}
 #wrapper main #resume .skills-box .progress-wrap .progress .progress-container {
   background: #ababab;
   display: block;
   height: 6px;
-  width: 75%;
+  width: 85%;
   position: relative;
 }
 #wrapper main #resume .skills-box .progress-wrap .progress .progress-container .progress-active {
