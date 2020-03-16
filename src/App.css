@@ -330,8 +330,8 @@ body {
   height: calc(100% - 30px);
   width: calc(100% - 30px);
   background: rgba(255, 255, 255, 0.9);
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0;
@@ -355,8 +355,8 @@ body {
   visibility: hidden;
   opacity: 0;
   margin-top: 30px;
-  -webkit-transition: all 0.4s ease-in-out 0.2s;
-  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.075s ease-in-out 0.2s;
+  transition: all 0.075s ease-in-out 0.2s;
 }
 #wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li {
   list-style: none;

@@ -390,8 +390,8 @@ body {
               height: calc(100% - 30px);
               width: calc(100% - 30px);
               background: hsla(0, 0%, 100%, .9);
-              -webkit-transition: all .4s ease-out;
-              transition: all .4s ease-out;
+              -webkit-transition: all .2s ease-out;
+              transition: all .2s ease-out;
               -webkit-transform: scaleX(0);
               transform: scaleX(0);
               -webkit-transform-origin: 0;
@@ -417,8 +417,8 @@ body {
               visibility: hidden;
               opacity: 0;
               margin-top: 30px;
-              -webkit-transition: all .4s ease-in-out .2s;
-              transition: all .4s ease-in-out .2s;
+              -webkit-transition: all .075s ease-in-out .2s;
+              transition: all .075s ease-in-out .2s;
 
               li {
                 list-style: none;
