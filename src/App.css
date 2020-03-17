@@ -2,6 +2,21 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 525px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 11px;
+  }
+}
 
 body,
 html,
@@ -52,11 +67,30 @@ body {
 }
 
 #wrapper {
-  width: 1200px;
+  width: 1100px;
   font-family: "Nunito Sans", sans-serif;
   margin: 0 auto;
-  padding: 0 50px;
   height: 100%;
+}
+@media (max-width: 1600px) {
+  #wrapper {
+    width: 1100px;
+  }
+}
+@media (max-width: 1170px) {
+  #wrapper {
+    width: 960px;
+  }
+}
+@media (max-width: 970px) {
+  #wrapper {
+    width: 800px;
+  }
+}
+@media (max-width: 870px) {
+  #wrapper {
+    width: 100%;
+  }
 }
 #wrapper aside {
   width: 260px;
@@ -68,10 +102,27 @@ body {
   color: #FFF;
   margin-right: 20px;
 }
+@media (max-width: 970px) {
+  #wrapper aside {
+    width: 800px;
+    z-index: 999;
+    height: 50px;
+  }
+}
+@media (max-width: 870px) {
+  #wrapper aside {
+    width: 100%;
+  }
+}
 #wrapper aside .heading {
   position: relative;
   padding: 30px;
   text-align: center;
+}
+@media (max-width: 970px) {
+  #wrapper aside .heading {
+    display: none;
+  }
 }
 #wrapper aside .heading .avatar-wrap {
   position: relative;
@@ -97,13 +148,31 @@ body {
   border-top: 1px solid #39783c;
   border-bottom: 1px solid #39783c;
 }
-#wrapper aside nav li {
+@media (max-width: 970px) {
+  #wrapper aside nav {
+    margin-top: 0;
+    padding: 0;
+    border: none;
+  }
+}
+@media (max-width: 970px) {
+  #wrapper aside nav ul {
+    display: flex;
+  }
+}
+#wrapper aside nav ul li {
   list-style: none;
   text-align: center;
   display: block;
   height: 50px;
 }
-#wrapper aside nav li a {
+@media (max-width: 970px) {
+  #wrapper aside nav ul li {
+    display: inline-block;
+    flex: 25%;
+  }
+}
+#wrapper aside nav ul li a {
   text-transform: uppercase;
   font-size: 0.94rem;
   letter-spacing: 1px;
@@ -116,14 +185,23 @@ body {
   z-index: 1;
   cursor: pointer;
   font-weight: 200;
-  font-size: 18px;
   line-height: 2.5rem;
   outline: none;
 }
-#wrapper aside nav li a.active {
+@media (max-width: 970px) {
+  #wrapper aside nav ul li a {
+    line-height: 2.9rem;
+  }
+}
+@media (max-width: 525px) {
+  #wrapper aside nav ul li a {
+    line-height: 3.4rem;
+  }
+}
+#wrapper aside nav ul li a.active {
   background: #39783c;
 }
-#wrapper aside nav li a:hover {
+#wrapper aside nav ul li a:hover {
   background: #39783c;
   transition: all 0.4s ease-out;
 }
@@ -132,7 +210,19 @@ body {
   width: calc(100% - 280px);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  font-size: 18px;
+  font-size: 1.2rem;
+}
+@media (max-width: 970px) {
+  #wrapper main {
+    width: 800px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 870px) {
+  #wrapper main {
+    width: 100%;
+  }
 }
 #wrapper main .border {
   padding: 40px 20px;
@@ -146,6 +236,11 @@ body {
 #wrapper main .border .component {
   margin-bottom: 80px;
 }
+@media (max-width: 1170px) {
+  #wrapper main .border .component {
+    margin-bottom: 50px;
+  }
+}
 #wrapper main .border .component .title {
   position: relative;
 }
@@ -156,6 +251,11 @@ body {
   z-index: 999;
   font-size: 2.57rem;
   line-height: 3.2857rem;
+}
+@media (max-width: 380px) {
+  #wrapper main .border .component .title h1 {
+    margin-bottom: 30px;
+  }
 }
 #wrapper main .border .component .title span {
   font-size: 4.5rem;
@@ -212,7 +312,7 @@ body {
 #wrapper main .border .component select,
 #wrapper main .border .component textarea {
   width: 100%;
-  font-size: 14px;
+  font-size: 0.94rem;
   vertical-align: middle;
 }
 #wrapper main .border .component input,
@@ -224,7 +324,7 @@ body {
 #wrapper main .border .component textarea {
   padding: 10px 15px;
 }
-#wrapper main .btn {
+#wrapper main .border .btn {
   margin-top: 30px;
   background-color: #275129;
   color: #FFF;
@@ -239,7 +339,15 @@ body {
   position: relative;
   cursor: pointer;
 }
-#wrapper main .btn::before {
+@media (max-width: 500px) {
+  #wrapper main .border .btn {
+    margin-top: 20px;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+#wrapper main .border .btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -248,74 +356,123 @@ body {
   height: 2px;
   width: 100%;
 }
-#wrapper main .btn:hover {
+#wrapper main .border .btn:hover {
   transition: all 0.4s ease-out;
   background-color: #39783c;
 }
-#wrapper main .btn:hover::before {
+#wrapper main .border .btn:hover::before {
   transform: scaleX(1);
   transition: all 0.4s ease-out;
   background: #D89F2D;
 }
-#wrapper main #about ul li b {
+#wrapper main .border #about ul li b {
   width: 120px;
   display: inline-block;
   position: relative;
   margin-right: 10px;
   vertical-align: top;
 }
-#wrapper main #about ul li b::after {
+@media (max-width: 800px) {
+  #wrapper main .border #about ul li b {
+    width: 100px;
+  }
+}
+@media (max-width: 525px) {
+  #wrapper main .border #about ul li b {
+    width: 80px;
+  }
+}
+@media (max-width: 450px) {
+  #wrapper main .border #about ul li b {
+    width: 75px;
+  }
+}
+@media (max-width: 380px) {
+  #wrapper main .border #about ul li b {
+    width: 70px;
+  }
+}
+#wrapper main .border #about ul li b::after {
   content: ":";
   position: absolute;
   top: 0;
   left: auto;
   right: 0;
 }
-#wrapper main #about ul li span {
+#wrapper main .border #about ul li span {
   display: inline-block;
-  width: 600px;
+  width: 80%;
 }
-#wrapper main #resume .skills-box {
+@media (max-width: 1170px) {
+  #wrapper main .border #about ul li span {
+    width: 77%;
+  }
+}
+@media (max-width: 665px) {
+  #wrapper main .border #about ul li span {
+    width: 75%;
+  }
+}
+@media (max-width: 450px) {
+  #wrapper main .border #about ul li span {
+    width: 70%;
+  }
+}
+@media (max-width: 360px) {
+  #wrapper main .border #about ul li span {
+    width: 100%;
+  }
+}
+#wrapper main .border #resume .skills-box {
   display: flex;
   flex-wrap: wrap;
 }
-#wrapper main #resume .skills-box .progress-wrap {
+#wrapper main .border #resume .skills-box .progress-wrap {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
 }
-#wrapper main #resume .skills-box .progress-wrap .progress-title {
+#wrapper main .border #resume .skills-box .progress-wrap .progress-title {
   font-weight: 600;
   margin-bottom: 0;
 }
-#wrapper main #resume .skills-box .progress-wrap .progress {
+#wrapper main .border #resume .skills-box .progress-wrap .progress {
   display: flex;
   align-items: center;
 }
-#wrapper main #resume .skills-box .progress-wrap .progress .progress-container {
+#wrapper main .border #resume .skills-box .progress-wrap .progress .progress-container {
   background: #ababab;
   display: block;
   height: 6px;
   width: 85%;
   position: relative;
 }
-#wrapper main #resume .skills-box .progress-wrap .progress .progress-container .progress-active {
+#wrapper main .border #resume .skills-box .progress-wrap .progress .progress-container .progress-active {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   background: #275129;
 }
-#wrapper main #portfolios .portfolios-wrap {
+#wrapper main .border #portfolios .portfolios-wrap {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 33.333333%;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box {
   width: 33.333333%;
+  margin-bottom: 20px;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
-  position: relative;
+@media (max-width: 1170px) {
+  #wrapper main .border #portfolios .portfolios-wrap .portfolios-box {
+    width: 50%;
+  }
+}
+@media (max-width: 725px) {
+  #wrapper main .border #portfolios .portfolios-wrap .portfolios-box {
+    width: 100%;
+  }
+}
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
   position: relative;
   width: 230px;
   height: 130px;
@@ -323,7 +480,31 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image::before {
+@media (max-width: 1170px) {
+  #wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
+    width: 280px;
+    height: 155px;
+  }
+}
+@media (max-width: 970px) {
+  #wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
+    width: 330px;
+    height: 180px;
+  }
+}
+@media (max-width: 800px) {
+  #wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
+    width: 300px;
+    height: 170px;
+  }
+}
+@media (max-width: 725px) {
+  #wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image {
+    width: 100%;
+    height: auto;
+  }
+}
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -338,12 +519,12 @@ body {
   -webkit-transform-origin: 0;
   transform-origin: 0;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image img {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image img {
   vertical-align: middle;
   min-height: 100%;
   min-width: 100%;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul {
   margin-bottom: 0;
   padding-left: 0;
   position: absolute;
@@ -359,13 +540,13 @@ body {
   -webkit-transition: all 0.075s ease-in-out 0.2s;
   transition: all 0.075s ease-in-out 0.2s;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li {
   list-style: none;
   display: inline-block;
   margin: 0 7px;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button,
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button,
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a {
   cursor: pointer;
   display: inline-block;
   height: 45px;
@@ -383,29 +564,29 @@ body {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button svg,
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a svg {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button svg,
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a svg {
   vertical-align: middle;
   overflow: hidden;
   height: 100%;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover::before {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover::before {
   transform: scaleX(1);
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover ul {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover ul {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-#wrapper main #portfolios .portfolios-wrap .portfolios-box p {
+#wrapper main .border #portfolios .portfolios-wrap .portfolios-box p {
   font-size: 1.14rem;
   line-height: 1.857rem;
 }
-#wrapper main #contact form .form-field {
+#wrapper main .border #contact form .form-field {
   margin-top: 30px;
   position: relative;
 }
-#wrapper main #contact form .form-field label {
+#wrapper main .border #contact form .form-field label {
   position: absolute;
   left: 15px;
   top: -13px;
@@ -417,14 +598,14 @@ body {
   padding: 0 10px;
   font-size: 0.94rem;
 }
-#wrapper main #contact form .form-field input,
-#wrapper main #contact form .form-field textarea {
+#wrapper main .border #contact form .form-field input,
+#wrapper main .border #contact form .form-field textarea {
   border: 1px solid #275129;
   font-size: 1rem;
   height: 50px;
   padding: 0 15px;
 }
-#wrapper main #contact form .form-field textarea {
+#wrapper main .border #contact form .form-field textarea {
   height: 190px;
   padding: 10px 15px;
 }
