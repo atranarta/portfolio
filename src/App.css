@@ -420,7 +420,7 @@ body {
 }
 @media (max-width: 360px) {
   #wrapper main .border #about ul li span {
-    width: 100%;
+    width: 65%;
   }
 }
 #wrapper main .border #resume .skills-box {
