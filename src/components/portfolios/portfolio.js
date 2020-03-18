@@ -17,6 +17,9 @@ const Portfolio = props => (
     </div>
     <h5>{props.title}</h5>
     <p>{props.text}</p>
+    <div className="popup">
+      <img src={props.img} alt={props.imageTitle} />
+    </div>
   </div>
 );
 
