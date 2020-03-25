@@ -1,12 +1,12 @@
 import React from 'react';
-import Portfolio from './portfolio'
+import Portfolio from './portfolio';
+import Title from './../title';
 
-const Portfolios = (props) => (
+const Portfolios = () => (
   <div id="portfolios" className="component">
-    <div className="title">
-      <h1>Portfolios</h1>
-      <span>Portfolios</span>
-    </div>
+    <Title 
+      text="Portfolios"
+    />
     <div className="portfolios-wrap">
       <Portfolio />
     </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 import Skill from './skill';
+import Title from './../title';
 
-const Resume = (props) => (
+const Resume = () => (
   <div id="resume" className="component">
-    <div className="title">
-      <h1>My skills</h1>
-      <span>My skills</span>
-    </div>
+    <Title 
+      text="My skills"
+    />
     <div className="skills-box">
       <Skill />
     </div>

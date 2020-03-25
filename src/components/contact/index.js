@@ -1,12 +1,12 @@
 import React from 'react';
 import Field from './contact-field';
+import Title from './../title';
 
 const Contact = () => (
   <div id="contact" className="component">
-    <div className="title">
-      <h1>Contact me</h1>
-      <span>Contact me</span>
-    </div>
+    <Title 
+      text="Contact me"
+    />
     <h4>Get In Touch</h4>
     <form>
       <Field />
