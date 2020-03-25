@@ -1,7 +1,7 @@
 import React from 'react';
 import Field from './contact-field';
 
-const Contact = (props) => (
+const Contact = () => (
   <div id="contact" className="component">
     <div className="title">
       <h1>Contact me</h1>
@@ -9,21 +9,7 @@ const Contact = (props) => (
     </div>
     <h4>Get In Touch</h4>
     <form>
-      <Field 
-        for="contact-form-name"
-        label="Enter your name"
-        id="contact-form-name"
-      />
-      <Field 
-        for="contact-form-email"
-        label="Enter your email"
-        id="contact-form-email"
-      />
-      <Field 
-        for="contact-form-subject"
-        label="Enter your subject"
-        id="contact-form-subject"
-      />
+      <Field />
       <div className="form-field">
         <label for="contact-form-message">Enter your message</label>
         <textarea type="text" name="name" id="contact-form-message" cols="30" rows="6"></textarea>
