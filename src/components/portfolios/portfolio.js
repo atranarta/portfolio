@@ -6,19 +6,16 @@ import ToDo_List from './../../img/portfolios/todo-list.png'
 const portfolios = [
   {
     img: Lotto_game,
-    imageTitle: "Lotto Game",
     title: "Lotto Game",
     text: "A Lotto-game created using HTML, CSS and Javascript (by me and two more persons)"
   },
   {
     img: Calculator,
-    imageTitle: "Calculator",
     title: "Calculator",
     text: "A calculator created using React and SCSS"
   },
   {
     img: ToDo_List,
-    imageTitle: "ToDo List",
     title: "ToDo List",
     text: "A calculator created using React and SCSSA ToDo List created using React, Javascript and SCSS"
   },
@@ -28,7 +25,7 @@ const Portfolio = () => (
   portfolios.map(portfolio => (
     <div className="portfolios-box">
       <div className="potfolio-image">
-        <img src={portfolio.img} alt={portfolio.imageTitle} />
+        <img src={portfolio.img} alt={portfolio.title} />
         <ul>
           <li>
             <button>
