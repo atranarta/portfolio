@@ -47,7 +47,7 @@ const Resume = () => (
       text="My skills"
     />
     <div className="skills-box">
-      {skills.map(skill => (<SkillBox title={skill.title} progress={skill.progress} />))}
+      {skills.map(skill => (<SkillBox {...skill} />))}
     </div>
   </div>
 );
