@@ -15,7 +15,7 @@ const Contact = () => (
         <textarea type="text" name="name" id="contact-form-message" cols="30" rows="6"></textarea>
       </div>
       <div className="form-field">
-        <button className="btn" type="submit">Send Mail</button>
+        <a href="mailto:tetiana.rabiievska@gmail.com" className="btn" target="_blank" rel="noopener noreferrer">Send Mail</a>
       </div>
     </form>
   </div>
