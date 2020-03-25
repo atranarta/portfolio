@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from './../../img/avatar.jpeg';
+import NavList from './navList';
 
 
 const sideNav = () => (
@@ -11,10 +12,7 @@ const sideNav = () => (
     </div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolios">Portfolios</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <NavList />
       </ul>
     </nav>
   </aside>
