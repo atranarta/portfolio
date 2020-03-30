@@ -77,14 +77,8 @@ body {
   font-family: "Nunito Sans", sans-serif;
   margin: 0 auto;
   height: 100%;
-
-  @include _1600 {
-    width: 1100px;
-  }
-
-  @include _1170 {
-    width: 960px;
-  }
+  padding: 0 15px;
+  box-sizing: border-box;
 
   @include _970 {
     width: 800px;
@@ -187,10 +181,6 @@ body {
             font-weight: 200;
             line-height: 2.5rem;
             outline: none;
-
-            @include _970 {
-              line-height: 2.9rem;
-            }
 
             @include _525 {
               line-height: 3.4rem;
