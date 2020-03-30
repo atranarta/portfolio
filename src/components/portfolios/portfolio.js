@@ -17,7 +17,7 @@ const portfolios = [
   {
     img: ToDo_List,
     title: "ToDo List",
-    text: "A calculator created using React and SCSSA ToDo List created using React, Javascript and SCSS"
+    text: "A calculator created using React and SCSS ToDo List created using React, Javascript and SCSS"
   },
 ]
 

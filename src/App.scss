@@ -73,7 +73,7 @@ body {
 }
 
 #wrapper {
-  width: 1100px;
+  max-width: 1100px;
   font-family: "Nunito Sans", sans-serif;
   margin: 0 auto;
   height: 100%;
@@ -106,7 +106,6 @@ body {
 
     @include _970 {
       width: 800px;
-      ;
       z-index: 999;
       height: 50px;
     }
@@ -491,13 +490,14 @@ body {
         .portfolios-wrap {
           display: flex;
           flex-wrap: wrap;
+          justify-content: space-around;
 
           .portfolios-box {
-            width: 33.333333%;
+            width: 32%;
             margin-bottom: 20px;
 
             @include _1170 {
-              width: 50%;
+              width: 45%;
             }
 
             @include _725 {
@@ -506,31 +506,9 @@ body {
 
             .potfolio-image {
               position: relative;
-              width: 230px;
-              height: 130px;
               background-position: center center;
               background-repeat: no-repeat;
               overflow: hidden;
-
-              @include _1170 {
-                width: 280px;
-                height: 155px;
-              }
-
-              @include _970 {
-                width: 330px;
-                height: 180px;
-              }
-
-              @include _800 {
-                width: 300px;
-                height: 170px;
-              }
-
-              @include _725 {
-                width: 100%;
-                height: auto;
-              }
 
               &::before {
                 content: "";
