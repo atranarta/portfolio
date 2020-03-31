@@ -79,6 +79,7 @@ body {
   height: 100%;
   padding: 0 15px;
   box-sizing: border-box;
+  position: relative;
 
   @include _970 {
     width: 800px;
@@ -102,6 +103,7 @@ body {
       width: 800px;
       z-index: 999;
       height: 50px;
+      left: 0;
     }
 
     @include _870 {
@@ -171,7 +173,7 @@ body {
             font-size: .94rem;
             letter-spacing: 1px;
             display: block;
-            padding: 5px 0;
+            padding: 5px;
             color: #FFF;
             font-weight: 600;
             position: relative;
@@ -179,11 +181,20 @@ body {
             z-index: 1;
             cursor: pointer;
             font-weight: 200;
-            line-height: 2.5rem;
+            line-height: 100%;
             outline: none;
+            height: 100%;
+
+            @include _970 {
+              line-height: 2.7rem;
+            }
+
+            @include _800 {
+              line-height: 3.2rem;
+            }
 
             @include _525 {
-              line-height: 3.4rem;
+              line-height: 3.9rem;
             }
 
             &.active {
@@ -427,8 +438,20 @@ body {
                 width: 70%;
               }
 
+              @include _410 {
+                width: 68%;
+              }
+
+              @include _370 {
+                width: 65%;
+              }
+
               @include _360 {
                 width: 65%;
+              }
+
+              @include _350 {
+                width: 60%;
               }
             }
           }

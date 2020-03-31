@@ -73,6 +73,7 @@ body {
   height: 100%;
   padding: 0 15px;
   box-sizing: border-box;
+  position: relative;
 }
 @media (max-width: 970px) {
   #wrapper {
@@ -99,6 +100,7 @@ body {
     width: 800px;
     z-index: 999;
     height: 50px;
+    left: 0;
   }
 }
 @media (max-width: 870px) {
@@ -169,7 +171,7 @@ body {
   font-size: 0.94rem;
   letter-spacing: 1px;
   display: block;
-  padding: 5px 0;
+  padding: 5px;
   color: #FFF;
   font-weight: 600;
   position: relative;
@@ -177,12 +179,23 @@ body {
   z-index: 1;
   cursor: pointer;
   font-weight: 200;
-  line-height: 2.5rem;
+  line-height: 100%;
   outline: none;
+  height: 100%;
+}
+@media (max-width: 970px) {
+  #wrapper aside nav ul li a {
+    line-height: 2.7rem;
+  }
+}
+@media (max-width: 800px) {
+  #wrapper aside nav ul li a {
+    line-height: 3.2rem;
+  }
 }
 @media (max-width: 525px) {
   #wrapper aside nav ul li a {
-    line-height: 3.4rem;
+    line-height: 3.9rem;
   }
 }
 #wrapper aside nav ul li a.active {
@@ -405,9 +418,24 @@ body {
     width: 70%;
   }
 }
+@media (max-width: 410px) {
+  #wrapper main .border #about ul li span {
+    width: 68%;
+  }
+}
+@media (max-width: 370px) {
+  #wrapper main .border #about ul li span {
+    width: 65%;
+  }
+}
 @media (max-width: 360px) {
   #wrapper main .border #about ul li span {
     width: 65%;
+  }
+}
+@media (max-width: 350px) {
+  #wrapper main .border #about ul li span {
+    width: 60%;
   }
 }
 #wrapper main .border #resume .skills-box {
