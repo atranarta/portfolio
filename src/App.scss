@@ -103,11 +103,11 @@ body {
       width: 800px;
       z-index: 999;
       height: 50px;
-      left: 0;
     }
 
     @include _870 {
       width: 100%;
+      left: 0;
     }
 
     .heading {
@@ -181,7 +181,7 @@ body {
             z-index: 1;
             cursor: pointer;
             font-weight: 200;
-            line-height: 100%;
+            line-height: 2.6rem;
             outline: none;
             height: 100%;
 
