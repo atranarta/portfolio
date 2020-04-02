@@ -286,42 +286,42 @@ aside nav ul li a:hover {
   left: auto;
   right: 0;
 }
-#about span {
+#about li span {
   display: inline-block;
   width: 80%;
 }
 @media (max-width: 1170px) {
-  #about span {
+  #about li span {
     width: 77%;
   }
 }
 @media (max-width: 665px) {
-  #about span {
+  #about li span {
     width: 75%;
   }
 }
 @media (max-width: 450px) {
-  #about span {
+  #about li span {
     width: 70%;
   }
 }
 @media (max-width: 410px) {
-  #about span {
+  #about li span {
     width: 68%;
   }
 }
 @media (max-width: 370px) {
-  #about span {
+  #about li span {
     width: 65%;
   }
 }
 @media (max-width: 360px) {
-  #about span {
+  #about li span {
     width: 65%;
   }
 }
 @media (max-width: 350px) {
-  #about span {
+  #about li span {
     width: 60%;
   }
 }
