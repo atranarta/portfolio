@@ -1,0 +1,147 @@
+.component {
+  margin-bottom: 80px;
+
+  @include _1170 {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    position: relative;
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      z-index: 999;
+      font-size: 2.57rem;
+      line-height: 3.2857rem;
+
+      @include _380 {
+        margin-bottom: 30px;
+      }
+    }
+
+    span {
+      font-size: 4.5rem;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      line-height: 1;
+      font-weight: 900;
+      color: $dark-green;
+      display: inline-block;
+      text-transform: uppercase;
+      z-index: -1;
+      -webkit-transform: translateY(-40%);
+      transform: translateY(-40%);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+  }
+
+  h2 {
+    text-align: right;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-bottom: 20px;
+
+    span {
+      color: $dark-green;
+    }
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 1.71rem;
+    line-height: 2.43rem;
+  }
+
+  h5 {
+    font-size: 1.43rem;
+    line-height: 2.14rem;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+
+  h6 {
+    font-size: 1.14rem;
+    line-height: 1.857rem;
+  }
+
+
+  button,
+  input,
+  select {
+    height: 50px;
+    padding: 0 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    font-size: 0.94rem;
+    vertical-align: middle;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    outline: none;
+  }
+
+  textarea {
+    padding: 10px 15px;
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  background-color: $dark-green;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 0 30px;
+  display: inline-block;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 50px;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+
+  @include _500 {
+    margin-top: 20px;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+
+  &:hover {
+    transition: all .4s ease-out;
+    background-color: $light-green;
+
+    &::before {
+      transform: scaleX(1);
+      transition: all .4s ease-out;
+      background: $dark-gold;
+    }
+  }
+}

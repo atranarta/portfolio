@@ -1,0 +1,36 @@
+#contact {
+
+  form {
+
+    .form-field {
+      margin-top: 30px;
+      position: relative;
+
+      label {
+        position: absolute;
+        left: 15px;
+        top: -13px;
+        background: $dark-green;
+        color: #FFF;
+        -webkit-transition: all .4s ease-out;
+        transition: all .4s ease-out;
+        pointer-events: none;
+        padding: 0 10px;
+        font-size: .94rem;
+      }
+
+      input,
+      textarea {
+        border: 1px solid $dark-green;
+        font-size: 1rem;
+        height: 50px;
+        padding: 0 15px;
+      }
+
+      textarea {
+        height: 190px;
+        padding: 10px 15px;
+      }
+    }
+  }
+}

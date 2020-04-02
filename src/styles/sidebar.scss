@@ -1,0 +1,121 @@
+aside {
+  width: 260px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: $dark-green;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #FFF;
+  margin-right: 20px;
+
+  @include _970 {
+    width: 800px;
+    z-index: 999;
+    height: 50px;
+  }
+
+  @include _870 {
+    width: 100%;
+    left: 0;
+  }
+
+  .heading {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+
+    @include _970 {
+      display: none;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      width: 186px;
+      height: 186px;
+      background: $gold-gradient;
+      border-radius: 100%;
+      text-align: center;
+      margin: 0 auto;
+
+      .avatar {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        border-radius: 100%;
+        margin-bottom: 50px;
+        filter: brightness(1.1);
+      }
+    }
+  }
+
+  nav {
+    margin-top: 50px;
+    width: 100%;
+    padding: 15px 5px;
+    border-top: 1px solid $light-green;
+    border-bottom: 1px solid $light-green;
+
+    @include _970 {
+      margin-top: 0;
+      padding: 0;
+      border: none;
+    }
+
+    ul {
+      @include _970 {
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        text-align: center;
+        display: block;
+        height: 50px;
+
+        @include _970 {
+          display: inline-block;
+          flex: 25%;
+        }
+
+        a {
+          text-transform: uppercase;
+          font-size: .94rem;
+          letter-spacing: 1px;
+          display: block;
+          padding: 5px;
+          color: #FFF;
+          font-weight: 600;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          cursor: pointer;
+          font-weight: 200;
+          line-height: 2.6rem;
+          outline: none;
+          height: 100%;
+
+          @include _970 {
+            line-height: 2.7rem;
+          }
+
+          @include _800 {
+            line-height: 3.2rem;
+          }
+
+          @include _525 {
+            line-height: 3.9rem;
+          }
+
+          &.active {
+            background: $light-green;
+          }
+
+          &:hover {
+            background: $light-green;
+            transition: all .4s ease-out;
+          }
+        }
+      }
+    }
+  }
+}
