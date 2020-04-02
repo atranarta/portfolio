@@ -252,7 +252,7 @@ aside nav ul li a:hover {
   background: #D89F2D;
 }
 
-#about ul li b {
+#about li b {
   width: 120px;
   display: inline-block;
   position: relative;
@@ -260,68 +260,68 @@ aside nav ul li a:hover {
   vertical-align: top;
 }
 @media (max-width: 800px) {
-  #about ul li b {
+  #about li b {
     width: 100px;
   }
 }
 @media (max-width: 525px) {
-  #about ul li b {
+  #about li b {
     width: 80px;
   }
 }
 @media (max-width: 450px) {
-  #about ul li b {
+  #about li b {
     width: 75px;
   }
 }
 @media (max-width: 380px) {
-  #about ul li b {
+  #about li b {
     width: 70px;
   }
 }
-#about ul li b::after {
+#about li b::after {
   content: ":";
   position: absolute;
   top: 0;
   left: auto;
   right: 0;
 }
-#about ul li span {
+#about span {
   display: inline-block;
   width: 80%;
 }
 @media (max-width: 1170px) {
-  #about ul li span {
+  #about span {
     width: 77%;
   }
 }
 @media (max-width: 665px) {
-  #about ul li span {
+  #about span {
     width: 75%;
   }
 }
 @media (max-width: 450px) {
-  #about ul li span {
+  #about span {
     width: 70%;
   }
 }
 @media (max-width: 410px) {
-  #about ul li span {
+  #about span {
     width: 68%;
   }
 }
 @media (max-width: 370px) {
-  #about ul li span {
+  #about span {
     width: 65%;
   }
 }
 @media (max-width: 360px) {
-  #about ul li span {
+  #about span {
     width: 65%;
   }
 }
 @media (max-width: 350px) {
-  #about ul li span {
+  #about span {
     width: 60%;
   }
 }
