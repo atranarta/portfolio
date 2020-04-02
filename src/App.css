@@ -377,13 +377,13 @@ aside nav ul li a:hover {
     width: 100%;
   }
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image {
+#portfolios .potfolio-image {
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image::before {
+#portfolios .potfolio-image::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -398,12 +398,12 @@ aside nav ul li a:hover {
   -webkit-transform-origin: 0;
   transform-origin: 0;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image img {
+#portfolios .potfolio-image img {
   vertical-align: middle;
   min-height: 100%;
   min-width: 100%;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul {
+#portfolios .potfolio-image ul {
   margin-bottom: 0;
   padding-left: 0;
   position: absolute;
@@ -419,13 +419,13 @@ aside nav ul li a:hover {
   -webkit-transition: all 0.075s ease-in-out 0.2s;
   transition: all 0.075s ease-in-out 0.2s;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li {
+#portfolios .potfolio-image ul li {
   list-style: none;
   display: inline-block;
   margin: 0 7px;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button,
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a {
+#portfolios .potfolio-image ul li button,
+#portfolios .potfolio-image ul li a {
   cursor: pointer;
   display: inline-block;
   height: 45px;
@@ -443,28 +443,28 @@ aside nav ul li a:hover {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li button svg,
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li a svg {
+#portfolios .potfolio-image ul li button svg,
+#portfolios .potfolio-image ul li a svg {
   vertical-align: middle;
   overflow: hidden;
   height: 100%;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image ul li.clicked .popup {
+#portfolios .potfolio-image ul li.clicked .popup {
   display: block;
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover::before {
+#portfolios .potfolio-image:hover::before {
   transform: scaleX(1);
 }
-#portfolios .portfolios-wrap .portfolios-box .potfolio-image:hover ul {
+#portfolios .potfolio-image:hover ul {
   visibility: visible;
   opacity: 1;
   margin-top: 0;
 }
-#portfolios .portfolios-wrap .portfolios-box p {
+#portfolios p {
   font-size: 1.14rem;
   line-height: 1.857rem;
 }
-#portfolios .portfolios-wrap .portfolios-box .popup {
+#portfolios .popup {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -479,7 +479,7 @@ aside nav ul li a:hover {
   -webkit-tap-highlight-color: transparent;
   display: none;
 }
-#portfolios .portfolios-wrap .portfolios-box .popup img {
+#portfolios .popup img {
   display: block;
   width: 60%;
   margin: 0 auto;
