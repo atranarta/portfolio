@@ -340,18 +340,18 @@ aside nav ul li a:hover {
   font-weight: 600;
   margin-bottom: 0;
 }
-#resume .skills-box .progress-wrap .progress {
+#resume .progress {
   display: flex;
   align-items: center;
 }
-#resume .skills-box .progress-wrap .progress .progress-container {
+#resume .progress .progress-container {
   background: #ababab;
   display: block;
   height: 6px;
   width: 85%;
   position: relative;
 }
-#resume .skills-box .progress-wrap .progress .progress-container .progress-active {
+#resume .progress .progress-container .progress-active {
   position: absolute;
   left: 0;
   top: 0;
