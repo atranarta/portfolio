@@ -100,48 +100,48 @@
   textarea {
     padding: 10px 15px;
   }
-}
-
-.btn {
-  margin-top: 30px;
-  background-color: $dark-green;
-  color: #FFF;
-  text-transform: uppercase;
-  padding: 0 30px;
-  display: inline-block;
-  font-size: .9rem;
-  letter-spacing: 2px;
-  height: 50px;
-  line-height: 50px;
-  border: 0;
-  position: relative;
-  cursor: pointer;
-
-  @include _500 {
-    margin-top: 20px;
-    padding: 0 20px;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: auto;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-  }
-
-  &:hover {
-    transition: all .4s ease-out;
-    background-color: $light-green;
-
+  
+  .btn {
+    margin-top: 30px;
+    background-color: $dark-green;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0 30px;
+    display: inline-block;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+  
+    @include _500 {
+      margin-top: 20px;
+      padding: 0 20px;
+      height: 40px;
+      line-height: 40px;
+    }
+  
     &::before {
-      transform: scaleX(1);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: auto;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+    }
+  
+    &:hover {
       transition: all .4s ease-out;
-      background: $dark-gold;
+      background-color: $light-green;
+  
+      &::before {
+        transform: scaleX(1);
+        transition: all .4s ease-out;
+        background: $dark-gold;
+      }
     }
   }
 }

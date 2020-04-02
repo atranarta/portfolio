@@ -210,8 +210,7 @@ aside nav ul li a:hover {
 .component textarea {
   padding: 10px 15px;
 }
-
-.btn {
+.component .btn {
   margin-top: 30px;
   background-color: #275129;
   color: #FFF;
@@ -227,14 +226,14 @@ aside nav ul li a:hover {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .btn {
+  .component .btn {
     margin-top: 20px;
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
   }
 }
-.btn::before {
+.component .btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -243,11 +242,11 @@ aside nav ul li a:hover {
   height: 2px;
   width: 100%;
 }
-.btn:hover {
+.component .btn:hover {
   transition: all 0.4s ease-out;
   background-color: #39783c;
 }
-.btn:hover::before {
+.component .btn:hover::before {
   transform: scaleX(1);
   transition: all 0.4s ease-out;
   background: #D89F2D;
