@@ -39,8 +39,11 @@ const Portfolio = () => (
       </div>
       <h5>{portfolio.title}</h5>
       <p>{portfolio.text}</p>
-      <div className="popup">
-        <img src={portfolio.img} alt={portfolio.imageTitle} />
+      <div className="popup-wrap">
+        <div className="popup-window">
+          <img src={portfolio.img} alt={portfolio.imageTitle} />
+          <button>X</button>
+        </div>
       </div>
     </div>
   ))
