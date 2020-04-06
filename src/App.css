@@ -620,11 +620,36 @@ aside nav ul li a:hover {
   outline: none;
   box-sizing: border-box;
 }
+@media (max-width: 525px) {
+  #portfolios .popup-window button {
+    padding: 0 10px;
+    height: 2.8rem;
+  }
+}
+@media (max-width: 350px) {
+  #portfolios .popup-window button {
+    height: 2.8rem;
+    padding: 7px;
+  }
+}
 #portfolios .popup-window button i {
   font-size: 2.2rem;
   height: 1.8rem;
   line-height: 1.8rem;
   color: #fff;
+}
+@media (max-width: 665px) {
+  #portfolios .popup-window button i {
+    font-size: 2rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 525px) {
+  #portfolios .popup-window button i {
+    height: 1.3rem;
+    line-height: 1.3rem;
+  }
 }
 #portfolios .popup-window button:hover i {
   transform: rotate(180deg);

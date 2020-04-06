@@ -163,12 +163,34 @@
       outline: none;
       box-sizing: border-box;
 
+      @include _525 {
+        padding: 0 10px;
+        height: 2.8rem;
+      }
+
+      @include _350 {
+        height: 2.8rem;
+        padding: 7px;
+      }
+
       i {
         font-size: 2.2rem;
         height: 1.8rem;
         line-height: 1.8rem;
         color: #fff;
+
+        @include _665 {
+          font-size: 2rem;
+          height: 1.6rem;
+          line-height: 1.6rem;
+        }
+
+        @include _525 {
+          height: 1.3rem;
+          line-height: 1.3rem;
+        }
       }
+
 
       &:hover {
         i {
