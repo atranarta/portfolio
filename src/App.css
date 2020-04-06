@@ -612,13 +612,12 @@ aside nav ul li a:hover {
 }
 #portfolios .popup-window button {
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 0;
+  right: 0;
   cursor: pointer;
   background: none;
   border: none;
   outline: none;
-  width: 7%;
   box-sizing: border-box;
 }
 #portfolios .popup-window button i {
