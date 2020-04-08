@@ -4,6 +4,7 @@ import Calculator from './../../img/portfolios/calculator.png';
 import ToDo_List from './../../img/portfolios/todo-list.png';
 import LoupeIcon from './loupeIcon';
 import LinkIcon from './linkIcon';
+import Popup from './popup';
 
 const portfolios = [
   {
@@ -45,14 +46,11 @@ const Portfolio = () => {
       <h5>{portfolio.title}</h5>
       <p>{portfolio.text}</p>
       {showPopup &&
-        <div className="popup-wrap">
-          <div className="popup-window">
-            <img src={portfolio.img} alt={portfolio.imageTitle} />
-            <button onClick={() => setShowPopup(!showPopup)}>
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
+        <Popup
+          img={portfolio.img}
+          imageTitle={portfolio.title}
+          onClickFunk={() => setShowPopup(!showPopup)}
+        />
       }
     </div>
   ))
