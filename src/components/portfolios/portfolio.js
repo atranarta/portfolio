@@ -8,16 +8,19 @@ import Popup from './popup';
 
 const portfolios = [
   {
+    id: "lottoGame",
     img: Lotto_game,
     title: "Lotto Game",
     text: "A Lotto-game created using HTML, CSS and Javascript (by me and two more persons)"
   },
   {
+    id: "calculator",
     img: Calculator,
     title: "Calculator",
     text: "A calculator created using React and SCSS"
   },
   {
+    id: "toDoList",
     img: ToDo_List,
     title: "ToDo List",
     text: "A ToDo List created using React, Javascript and SCSS"
@@ -25,13 +28,16 @@ const portfolios = [
 ]
 
 const Portfolio = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  const [id, setImageId] = useState(undefined);
+
+  const portfolioItem = id ? portfolios.find(item => item.id === id) : undefined;
+
   return (portfolios.map(portfolio => (
     <div className="portfolios-box">
       <div className="potfolio-image">
         <img src={portfolio.img} alt={portfolio.title} />
         <ul>
-          <li onClick={() => setShowPopup(!showPopup)}>
+          <li onClick={() => setImageId(portfolio.id)}>
             <button>
               <LoupeIcon />
             </button>
@@ -45,11 +51,11 @@ const Portfolio = () => {
       </div>
       <h5>{portfolio.title}</h5>
       <p>{portfolio.text}</p>
-      {showPopup &&
-        <Popup
-          img={portfolio.img}
-          imageTitle={portfolio.title}
-          onClickFunk={() => setShowPopup(!showPopup)}
+      {portfolioItem &&
+        <Popup 
+          onClick={() => setImageId(undefined)}
+          alt={portfolioItem.title}
+          image={portfolioItem.img}
         />
       }
     </div>
