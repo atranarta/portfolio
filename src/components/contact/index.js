@@ -1,27 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Field from './contact-field';
 import Title from './../title';
 
-const Contact = () => (
-  <div id="contact" className="component">
-    <Title 
-      text="Contact me"
-    />
-    <h4>Get In Touch</h4>
-    <form>
-      <Field id="contact-form-name" label="Enter your name" />
-      <Field id="contact-form-email" label="Enter your email" />
-      <Field id="contact-form-subject" label="Enter your subject" />
+const Contact = () => {
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputSubject, setInputSubject] = useState("");
+  const [getUserText, setUserText] = useState("");
+  const [message, toggleMessageFunc] = useState(false);
 
-      <div className="form-field">
-        <label for="contact-form-message">Enter your message</label>
-        <textarea type="text" name="name" id="contact-form-message" cols="30" rows="6"></textarea>
-      </div>
-      <div className="form-field">
-        <a href="mailto:tetiana.rabiievska@gmail.com" className="btn" target="_blank" rel="noopener noreferrer">Send Mail</a>
-      </div>
-    </form>
-  </div>
-);
+  const showMessage = () => {
+    toggleMessageFunc(!message);
+  };
+
+  return (
+    <div id="contact" className="component">
+      <Title
+        text="Contact me"
+      />
+      <h4>Get In Touch</h4>
+      <form>
+        {message && (
+          <div className="userMessage">{`Thank you ${inputName} from ${inputSubject} for contacting me! I'll get back to you on your email ${inputEmail} and your message: ${getUserText}`}</div>
+        )}
+        <Field id="contact-form-name"
+          label="Enter your name"
+          onChange={event => setInputName(event.target.value)} />
+        <Field id="contact-form-email"
+          label="Enter your email"
+          onChange={event => setInputEmail(event.target.value)} />
+        <Field id="contact-form-subject"
+          label="Enter your subject"
+          onChange={event => setInputSubject(event.target.value)} />
+
+        <div className="form-field">
+          <label for="contact-form-message">Enter your message</label>
+          <textarea type="text"
+            name="name"
+            id="contact-form-message"
+            cols="30"
+            rows="6"
+            onChange={event => setUserText(event.target.value)}>
+          </textarea>
+        </div>
+        <div className="form-field">
+          <button onClick={showMessage} className="btn" target="_blank" rel="noopener noreferrer">Send Mail</button>
+        </div>
+
+      </form>
+    </div>
+  )
+};
 
 export default Contact;
