@@ -11,7 +11,7 @@ const list = [
   },
   {
     title: "Languages",
-    text: "English (Professional working proficiency), German (Upper Intermediate), Ukrainian (Native), Russian (Native), Polish (Elementary)"
+    text: "English (Professional working proficiency), German (Upper Intermediate), Ukrainian (Native), Russian (Native)"
   },
   {
     title: "Location",
