@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import SideNav from "./components/sideNav";
-import About from "./components/about";
-import Resume from "./components/resume";
-import Portfolios from "./components/portfolios";
-import Contact from "./components/contact";
+import SideNav from "./components/SideNav";
+import About from "./components/About";
+import Resume from "./components/Resume";
+import Portfolios from "./components/Portfolios";
+import Contact from "./components/Contact";
 
 function App() {
   return (
