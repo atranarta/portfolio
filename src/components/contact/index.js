@@ -23,15 +23,15 @@ const Contact = () => {
         id="contact-form-name"
         label="Enter your name"
         value={inputName}
-        onChange={event => setInputName(event.target.value)} />
+        onChangeFunc={event => setInputName(event.target.value)} />
       <Field id="contact-form-email"
         label="Enter your email"
         value={inputEmail}
-        onChange={event => setInputEmail(event.target.value)} />
+        onChangeFunc={event => setInputEmail(event.target.value)} />
       <Field id="contact-form-subject"
         label="Enter your subject"
         value={inputSubject}
-        onChange={event => setInputSubject(event.target.value)} />
+        onChangeFunc={event => setInputSubject(event.target.value)} />
 
       <div className="form-field">
         <label for="contact-form-message">Enter your message</label>
