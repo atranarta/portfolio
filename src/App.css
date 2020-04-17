@@ -683,5 +683,10 @@ aside nav ul li a:hover {
   height: 190px;
   padding: 10px 15px;
 }
+#contact .userMessage {
+  margin: 20px 10px;
+  padding: 10px;
+  border: 3px solid #275129;
+}
 
 /*# sourceMappingURL=App.css.map */

@@ -19,9 +19,6 @@ const Contact = () => {
         text="Contact me"
       />
       <h4>Get In Touch</h4>
-      {messageBool && (
-        <div className="userMessage">{`Thank you ${inputName} from ${inputSubject} for contacting me! I'll get back to you on your email ${inputEmail} and your message: ${getUserText}`}</div>
-      )}
       <Field 
         id="contact-form-name"
         label="Enter your name"
@@ -46,6 +43,9 @@ const Contact = () => {
           onChange={event => setUserText(event.target.value)}>
         </textarea>
       </div>
+      {messageBool && (
+        <div className="userMessage">{`Thank you ${inputName} from ${inputSubject} for contacting me! I'll get back to you on your email ${inputEmail} and your message: ${getUserText}`}</div>
+      )}
       <div className="form-field">
         <button onClick={showMessage} className="btn" target="_blank" rel="noopener noreferrer">Send Mail</button>
       </div>
