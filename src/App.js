@@ -6,9 +6,17 @@ import Resume from "./components/Resume";
 import Portfolios from "./components/Portfolios";
 import Contact from "./components/Contact";
 
+const theme = {
+  background: "#282c34",
+}
+
 function App() {
   return (
-    <div className="App">
+    <div className="App"
+      style = {{
+        background: theme.background,
+      }}>
+      <button>Change Theme</button>
       <div id="wrapper">
         <SideNav />
         <main>
