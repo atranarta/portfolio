@@ -1,12 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+
 import './App.css';
+
 import SideNav from "./components/SideNav";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Portfolios from "./components/Portfolios";
 import Contact from "./components/Contact";
 
-import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (

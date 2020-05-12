@@ -4,28 +4,32 @@ import { Link } from "react-router-dom";
 
 const list = [
   {
-    link: "about",
-    text: "About"
+    key: 1,
+    text: "About",
+    link: "/"
   },
   {
-    link: "resume",
-    text: "Resume"
+    key: 2,
+    text: "Resume",
+    link: "resume"
   },
   {
-    link: "portfolios",
-    text: "Portfolios"
+    key: 3,
+    text: "Portfolios",
+    link: "portfolios"
   },
   {
-    link: "contact",
-    text: "Contact"
+    key: 4,
+    text: "Contact",
+    link: "contact"
   },
 ]
 
 const NavList = () => (
   list.map(item => (
-    <Link to="item.link">
-      <li>{item.text}</li>
-    </Link>
+    <li key={item.key}>{item.text}
+      <Link to={item.link} />
+    </li>
   ))
 )
 

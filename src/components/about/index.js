@@ -6,8 +6,8 @@ import { Switch, Route } from "react-router-dom";
 
 const About = () => (
   <Switch>
-    <Route path="/about">
-      <div className="component">
+    <Route exact path="/">
+      <div id="about" className="component">
         <Title
           text="About me"
         />

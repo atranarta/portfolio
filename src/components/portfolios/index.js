@@ -7,7 +7,7 @@ import { Switch, Route } from "react-router-dom";
 const Portfolios = () => (
   <Switch>
     <Route path="/portfolios">
-      <div className="component">
+      <div id="portfolios" className="component">
         <Title
           text="Portfolios"
         />

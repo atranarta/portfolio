@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <Switch>
       <Route path="/contact">
-        <div className="component">
+        <div id="contact" className="component">
           <Title
             text="Contact me"
           />
