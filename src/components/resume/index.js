@@ -2,6 +2,9 @@ import React from 'react';
 import SkillBox from './skill';
 import Title from './../title';
 
+import { Switch, Route } from "react-router-dom";
+
+
 const skills = [
   {
     title: "HTML5",
@@ -42,14 +45,18 @@ const skills = [
 ];
 
 const Resume = () => (
-  <div id="resume" className="component">
-    <Title
-      text="My skills"
-    />
-    <div className="skills-box">
-      {skills.map(skill => (<SkillBox {...skill} />))}
-    </div>
-  </div>
+  <Switch>
+    <Route path="/resume">
+      <div className="component">
+        <Title
+          text="My skills"
+        />
+        <div className="skills-box">
+          {skills.map(skill => (<SkillBox {...skill} />))}
+        </div>
+      </div>
+    </Route>
+  </Switch>
 );
 
 export default Resume;

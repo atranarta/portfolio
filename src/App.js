@@ -6,21 +6,25 @@ import Resume from "./components/Resume";
 import Portfolios from "./components/Portfolios";
 import Contact from "./components/Contact";
 
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <div id="wrapper">
-        <SideNav />
-        <main>
-          <div className="border">
-            <About />
-            <Resume />
-            <Portfolios />
-            <Contact />
-          </div>
-        </main>
+    <Router>
+      <div className="App">
+        <div id="wrapper">
+          <SideNav />
+          <main>
+            <div className="border">
+              <About />
+              <Resume />
+              <Portfolios />
+              <Contact />
+            </div>
+          </main>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

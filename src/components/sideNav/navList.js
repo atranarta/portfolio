@@ -1,27 +1,31 @@
 import React from 'react';
 
+import { Link } from "react-router-dom";
+
 const list = [
   {
-    link: "#about",
+    link: "about",
     text: "About"
   },
   {
-    link: "#resume",
+    link: "resume",
     text: "Resume"
   },
   {
-    link: "#portfolios",
+    link: "portfolios",
     text: "Portfolios"
   },
   {
-    link: "#contact",
+    link: "contact",
     text: "Contact"
   },
 ]
 
 const NavList = () => (
   list.map(item => (
-    <li><a href={item.link}>{item.text}</a></li>
+    <Link to="item.link">
+      <li>{item.text}</li>
+    </Link>
   ))
 )
 
