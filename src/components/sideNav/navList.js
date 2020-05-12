@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const list = [
   {
@@ -28,7 +28,7 @@ const list = [
 const NavList = () => (
   list.map(item => (
     <li >
-      <Link key={item.key} to={item.link}>{item.text}</Link>
+      <NavLink to={item.link} key={item.key} activeClassName="active">{item.text}</NavLink>
     </li>
   ))
 )
