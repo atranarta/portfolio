@@ -27,8 +27,8 @@ const list = [
 
 const NavList = () => (
   list.map(item => (
-    <li key={item.key}>{item.text}
-      <Link to={item.link} />
+    <li >
+      <Link key={item.key} to={item.link}>{item.text}</Link>
     </li>
   ))
 )
