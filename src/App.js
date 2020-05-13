@@ -1,14 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
 
-import SideNav from "./components/SideNav";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Portfolios from "./components/Portfolios";
-import Contact from "./components/Contact";
-
+import SideNav from "./components/sideNav";
+import About from "./components/about";
+import Resume from "./components/resume";
+import Portfolios from "./components/portfolios";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -18,10 +17,12 @@ function App() {
           <SideNav />
           <main>
             <div className="border">
-              <About />
-              <Resume />
-              <Portfolios />
-              <Contact />
+              <Switch>
+                <Route exact path='/' component={About} />
+                <Route path='/resume' component={Resume} />
+                <Route path='/contact' component={Contact} />
+                <Route path='/portfolios' component={Portfolios} />
+              </Switch>
             </div>
           </main>
         </div>

@@ -2,9 +2,6 @@ import React from 'react';
 import SkillBox from './skill';
 import Title from './../title';
 
-import { Switch, Route } from "react-router-dom";
-
-
 const skills = [
   {
     key: 1,
@@ -54,18 +51,14 @@ const skills = [
 ];
 
 const Resume = () => (
-  <Switch>
-    <Route path="/resume">
-      <div id="resume" className="component">
-        <Title
-          text="My skills"
-        />
-        <div className="skills-box">
-          {skills.map(skill => (<SkillBox key={skill.key} {...skill} />))}
-        </div>
-      </div>
-    </Route>
-  </Switch>
+  <div id="resume" className="component">
+    <Title
+      text="My skills"
+    />
+    <div className="skills-box">
+      {skills.map(skill => (<SkillBox key={skill.key} {...skill} />))}
+    </div>
+  </div>
 );
 
 export default Resume;
