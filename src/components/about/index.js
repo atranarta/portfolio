@@ -8,12 +8,14 @@ const About = () => (
       text="About me"
     />
     <h2>I am <span>Tetiana Rabiievska</span></h2>
-    <p>I am a frontend web developer. I can provide clean code and pixel perfect design.
-      I also make website more &amp; more interactive.</p>
+    <p>I'm a highly motivated Frontend Developer, passionate about creating and developing
+      pixel-perfect user interfaces, always considering the latest trends in Web development.</p>
     <ul>
       <AboutList />
     </ul>
-    <a className="btn" href="./../../img/Tetiana Rabiievska.pdf" download>Download CV</a>
+    {/* <a className="btn" href="./../../img/Tetiana Rabiievska.pdf" download>Download CV</a> */}
+    {/* <a className="btn" href="https://resume.io/r/UDnTSe5do">See my CV</a> */}
+    <a className="btn" href="https://www.linkedin.com/in/tetiana-rabiievska/">See my LinkedIn</a>
   </div>
 );
 

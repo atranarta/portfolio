@@ -7,7 +7,7 @@ const list = [
   },
   {
     title: "Age",
-    text: "30"
+    text: "31"
   },
   {
     title: "Languages",

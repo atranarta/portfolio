@@ -40,8 +40,9 @@ const skills = [
   },
   {
     key: 8,
-    title: "Photoshop",
-    progress: "40%"
+    title: "Redux",
+    progress: "20%",
+
   },
   {
     key: 9,
