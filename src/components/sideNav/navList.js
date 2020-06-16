@@ -10,8 +10,8 @@ const list = [
   },
   {
     key: 2,
-    text: "Resume",
-    link: "resume"
+    text: "Technical skills",
+    link: "skills"
   },
   {
     key: 3,

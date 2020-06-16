@@ -13,8 +13,6 @@ const About = () => (
     <ul>
       <AboutList />
     </ul>
-    {/* <a className="btn" href="./../../img/Tetiana Rabiievska.pdf" download>Download CV</a> */}
-    {/* <a className="btn" href="https://resume.io/r/UDnTSe5do">See my CV</a> */}
     <a className="btn" href="https://www.linkedin.com/in/tetiana-rabiievska/">See my LinkedIn</a>
   </div>
 );

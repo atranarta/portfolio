@@ -51,15 +51,16 @@ const skills = [
   }
 ];
 
-const Resume = () => (
-  <div id="resume" className="component">
+const Skills = () => (
+  <div id="skills" className="component">
     <Title
       text="My skills"
     />
     <div className="skills-box">
       {skills.map(skill => (<SkillBox key={skill.key} {...skill} />))}
     </div>
+    <a className="btn" href="./../../img/CV Tetiana Rabiievska.pdf" download>Download CV</a>
   </div>
 );
 
-export default Resume;
+export default Skills;

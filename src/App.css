@@ -442,31 +442,31 @@ aside nav ul li a:hover {
   }
 }
 
-#resume .skills-box {
+#skills .skills-box {
   display: flex;
   flex-wrap: wrap;
 }
-#resume .skills-box .progress-wrap {
+#skills .skills-box .progress-wrap {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
 }
-#resume .skills-box .progress-wrap .progress-title {
+#skills .skills-box .progress-wrap .progress-title {
   font-weight: 600;
   margin-bottom: 0;
 }
-#resume .progress {
+#skills .progress {
   display: flex;
   align-items: center;
 }
-#resume .progress .progress-container {
+#skills .progress .progress-container {
   background: #ababab;
   display: block;
   height: 6px;
   width: 85%;
   position: relative;
 }
-#resume .progress .progress-container .progress-active {
+#skills .progress .progress-container .progress-active {
   position: absolute;
   left: 0;
   top: 0;
