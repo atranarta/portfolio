@@ -10,7 +10,7 @@ const list = [
   },
   {
     key: 2,
-    text: "Technical skills",
+    text: "Skills",
     link: "skills"
   },
   {

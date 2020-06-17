@@ -59,7 +59,7 @@ const Skills = () => (
     <div className="skills-box">
       {skills.map(skill => (<SkillBox key={skill.key} {...skill} />))}
     </div>
-    <a className="btn" href="./../../img/CV Tetiana Rabiievska.pdf" download>Download CV</a>
+    {/* <a className="btn" href="./../../img/CV Tetiana Rabiievska.pdf" download>Download CV</a> */}
   </div>
 );
 
