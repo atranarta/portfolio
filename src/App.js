@@ -6,7 +6,7 @@ import './App.css';
 import SideNav from "./components/sideNav";
 import About from "./components/about";
 import Skills from "./components/skills";
-import Portfolios from "./components/portfolios";
+import Projects from "./components/projects";
 import Contact from "./components/contact";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
                 <Route exact path='/' component={About} />
                 <Route path='/skills' component={Skills} />
                 <Route path='/contact' component={Contact} />
-                <Route path='/portfolios' component={Portfolios} />
+                <Route path='/projects' component={Projects} />
               </Switch>
             </div>
           </main>

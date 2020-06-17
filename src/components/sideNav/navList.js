@@ -15,8 +15,8 @@ const list = [
   },
   {
     key: 3,
-    text: "Portfolios",
-    link: "portfolios"
+    text: "Projects",
+    link: "projects"
   },
   {
     key: 4,

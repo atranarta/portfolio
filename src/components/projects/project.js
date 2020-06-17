@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Lotto_game from './../../img/portfolios/lotto-game.png';
-import Restaurant_Finder from './../../img/portfolios/restaurant-finder.png';
-import ToDo_List from './../../img/portfolios/todo-list.png';
+import Lotto_game from './../../img/projects/lotto-game.png';
+import Restaurant_Finder from './../../img/projects/restaurant-finder.png';
+import ToDo_List from './../../img/projects/todo-list.png';
 import LoupeIcon from './loupeIcon';
 import LinkIcon from './linkIcon';
 import Popup from './popup';
 
-const portfolios = [
+const projects = [
   {
     id: "lottoGame",
     img: Lotto_game,
@@ -32,35 +32,35 @@ const portfolios = [
   },
 ]
 
-const Portfolio = () => {
+const Project = () => {
   const [id, setImageId] = useState(undefined);
 
-  const portfolioItem = id ? portfolios.find(item => item.id === id) : undefined;
+  const projectItem = id ? projects.find(item => item.id === id) : undefined;
 
-  return (portfolios.map(portfolio => (
-    <div className="portfolios-box">
+  return (projects.map(project => (
+    <div className="projects-box">
       <div className="potfolio-image">
-        <img src={portfolio.img} alt={portfolio.title} />
+        <img src={project.img} alt={project.title} />
         <ul>
-          <li onClick={() => setImageId(portfolio.id)}>
+          <li onClick={() => setImageId(project.id)}>
             <button>
               <LoupeIcon />
             </button>
           </li>
           <li>
-            <a rel="noopener noreferrer" target="_blank" href={portfolio.link}>
+            <a rel="noopener noreferrer" target="_blank" href={project.link}>
               <LinkIcon />
             </a>
           </li>
         </ul>
       </div>
-      <h5>{portfolio.title}</h5>
-      <p>{portfolio.text}</p>
-      {portfolioItem &&
+      <h5>{project.title}</h5>
+      <p>{project.text}</p>
+      {projectItem &&
         <Popup
           onClick={() => setImageId(undefined)}
-          alt={portfolioItem.title}
-          image={portfolioItem.img}
+          alt={projectItem.title}
+          image={projectItem.img}
         />
       }
     </div>
@@ -68,4 +68,4 @@ const Portfolio = () => {
   );
 }
 
-export default Portfolio;
+export default Project;
