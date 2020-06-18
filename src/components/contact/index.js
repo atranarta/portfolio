@@ -24,11 +24,13 @@ const Contact = () => {
         label="Enter your name"
         value={inputName}
         onChangeFunc={event => setInputName(event.target.value)} />
-      <Field id="contact-form-email"
+      <Field
+        id="contact-form-email"
         label="Enter your email"
         value={inputEmail}
         onChangeFunc={event => setInputEmail(event.target.value)} />
-      <Field id="contact-form-subject"
+      <Field
+        id="contact-form-subject"
         label="Enter your subject"
         value={inputSubject}
         onChangeFunc={event => setInputSubject(event.target.value)} />
@@ -44,7 +46,9 @@ const Contact = () => {
         </textarea>
       </div>
       {messageBool && (
-        <div className="userMessage">{`Thank you ${inputName} from ${inputSubject} for contacting me! I'll get back to you on your email ${inputEmail} and your message: ${getUserText}`}</div>
+        <div className="userMessage">{`Thank you ${inputName} from ${inputSubject}{" "}
+        for contacting me! I'll get back to you on your email ${inputEmail} and your message:{" "}
+        ${getUserText}`}</div>
       )}
       <div className="form-field">
         <button onClick={showMessage} className="btn" target="_blank" rel="noopener noreferrer">Send Mail</button>
