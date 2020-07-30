@@ -28,7 +28,8 @@ const projects = [
     id: "toDoList",
     img: ToDo_List,
     title: "ToDo List",
-    text: "IN PROGRESS... A ToDo List created using React, Javascript and SCSS."
+    link: "https://github.com/atranarta/todo-app",
+    text: "A simple ToDo List created using React and SCSS."
   },
 ]
 
