@@ -29,7 +29,7 @@ const projects = [
   {
     id: "weatherApp",
     img: Weather_App,
-    title: "ToDo List",
+    title: "Weather App",
     link: "https://tender-volhard-cf4f05.netlify.app/",
     text: "With this application, the weather can be seen in the user's current geolocation, or anywhere else " +
     "in the world. The background also changes depending on the data received." +
