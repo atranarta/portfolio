@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Lotto_game from './../../img/projects/lotto-game.png';
 import Restaurant_Finder from './../../img/projects/restaurant-finder.png';
-import ToDo_List from './../../img/projects/todo-list.png';
+import Weather_App from './../../img/projects/weather-app.png';
 import LoupeIcon from './loupeIcon';
 import LinkIcon from './linkIcon';
 import Popup from './popup';
@@ -12,7 +12,7 @@ const projects = [
     img: Lotto_game,
     title: "Lotto Game",
     link: "https://lernwerkstatt-lottogame.azurewebsites.net",
-    text: "In this project, I was mainly responsible for the design and layout developing. " +
+    text: "Is a team project, in which I was mainly responsible for the design and layout developing. " +
     "For the implementation I used HTML, CSS and a bit of Javascript."
   },
   {
@@ -20,16 +20,20 @@ const projects = [
     img: Restaurant_Finder,
     title: "Restaurant Finder",
     link: "https://priceless-galileo-680738.netlify.app",
-    text: "In this project I learned to develop Apps with dynamic content by fetching the data from the API" +
+    text: "This app helps to find and filter restaurants based on different requests. For example, " +
+    "to find a middle-range Italian restaurant that is open now and also serves lactose-free dishes." +
+    "In this project I learned to develop Apps with dynamic content by fetching the data from the API." +
     "Also I applied React Routing and used Redux. " +
     "I came up with all the design and styles myself. For the styling I used SCSS."
   },
   {
-    id: "toDoList",
-    img: ToDo_List,
+    id: "weatherApp",
+    img: Weather_App,
     title: "ToDo List",
-    link: "https://github.com/atranarta/todo-app",
-    text: "A simple ToDo List created using React and SCSS."
+    link: "https://tender-volhard-cf4f05.netlify.app/",
+    text: "With this application, the weather can be seen in the user's current geolocation, or anywhere else " +
+    "in the world. The background also changes depending on the data received." +
+    "For developing this App I used React and SCSS, and all the weather data I received etching the data from the API."
   },
 ]
 
@@ -40,10 +44,10 @@ const Project = () => {
 
   return (projects.map(project => (
     <div className="projects-box">
-      <div className="potfolio-image">
+      <div className="portfolio-image" >
         <img src={project.img} alt={project.title} />
         <ul>
-          <li onClick={() => setImageId(project.id)}>
+          <li key={project.id} onClick={() => setImageId(project.id)}>
             <button>
               <LoupeIcon />
             </button>

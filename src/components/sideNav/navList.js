@@ -27,7 +27,7 @@ const list = [
 
 const NavList = () => (
   list.map(item => (
-    <li >
+    <li key={item.key}>
       <NavLink exact to={item.link} key={item.key} activeClassName='active'>{item.text}</NavLink>
     </li>
   ))

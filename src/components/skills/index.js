@@ -31,7 +31,7 @@ const skills = [
   {
     key: 6,
     title: "React",
-    progress: "40%"
+    progress: "60%"
   },
   {
     key: 7,
@@ -59,7 +59,6 @@ const Skills = () => (
     <div className="skills-box">
       {skills.map(skill => (<SkillBox key={skill.key} {...skill} />))}
     </div>
-    <a className="btn" href="./CV Tetiana Rabiievska.pdf" download>Download CV</a>
   </div>
 );
 

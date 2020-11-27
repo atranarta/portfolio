@@ -188,6 +188,7 @@ aside nav ul li {
   text-align: center;
   display: block;
   height: 50px;
+  position: relative;
 }
 @media (max-width: 970px) {
   aside nav ul li {
@@ -203,7 +204,6 @@ aside nav ul li a {
   padding: 5px;
   color: #FFF;
   font-weight: 600;
-  position: relative;
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
@@ -493,13 +493,13 @@ aside nav ul li a:hover {
     width: 100%;
   }
 }
-#projects .potfolio-image {
+#projects .portfolio-image {
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
-#projects .potfolio-image::before {
+#projects .portfolio-image::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -514,12 +514,12 @@ aside nav ul li a:hover {
   -webkit-transform-origin: 0;
   transform-origin: 0;
 }
-#projects .potfolio-image img {
+#projects .portfolio-image img {
   vertical-align: middle;
   min-height: 100%;
   min-width: 100%;
 }
-#projects .potfolio-image ul {
+#projects .portfolio-image ul {
   margin-bottom: 0;
   padding-left: 0;
   position: absolute;
@@ -535,13 +535,13 @@ aside nav ul li a:hover {
   -webkit-transition: all 0.075s ease-in-out 0.2s;
   transition: all 0.075s ease-in-out 0.2s;
 }
-#projects .potfolio-image ul li {
+#projects .portfolio-image ul li {
   list-style: none;
   display: inline-block;
   margin: 0 7px;
 }
-#projects .potfolio-image ul li button,
-#projects .potfolio-image ul li a {
+#projects .portfolio-image ul li button,
+#projects .portfolio-image ul li a {
   cursor: pointer;
   display: inline-block;
   height: 45px;
@@ -559,19 +559,19 @@ aside nav ul li a:hover {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
-#projects .potfolio-image ul li button svg,
-#projects .potfolio-image ul li a svg {
+#projects .portfolio-image ul li button svg,
+#projects .portfolio-image ul li a svg {
   vertical-align: middle;
   overflow: hidden;
   height: 100%;
 }
-#projects .potfolio-image ul li.clicked .popup {
+#projects .portfolio-image ul li.clicked .popup {
   display: block;
 }
-#projects .potfolio-image:hover::before {
+#projects .portfolio-image:hover::before {
   transform: scaleX(1);
 }
-#projects .potfolio-image:hover ul {
+#projects .portfolio-image:hover ul {
   visibility: visible;
   opacity: 1;
   margin-top: 0;

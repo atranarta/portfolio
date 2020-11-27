@@ -1,57 +1,23 @@
-import React, { useState } from 'react';
-import Field from './contact-field';
+import React from 'react';
 import Title from './../title';
 
+import Linkedin from './../../img/linkedin.png';
+import Github from './../../img/github.png';
+
 const Contact = () => {
-  const [inputName, setInputName] = useState("");
-  const [inputEmail, setInputEmail] = useState("");
-  const [inputSubject, setInputSubject] = useState("");
-  const [getUserText, setUserText] = useState("");
-  const [messageBool, setMessageBool] = useState(false);
-
-  const showMessage = () => {
-    setMessageBool(!messageBool);
-  };
-
   return (
     <div id="contact" className="component">
       <Title
         text="Contact me"
       />
       <h4>Get In Touch</h4>
-      <Field
-        id="contact-form-name"
-        label="Enter your name"
-        value={inputName}
-        onChangeFunc={event => setInputName(event.target.value)} />
-      <Field
-        id="contact-form-email"
-        label="Enter your email"
-        value={inputEmail}
-        onChangeFunc={event => setInputEmail(event.target.value)} />
-      <Field
-        id="contact-form-subject"
-        label="Enter your subject"
-        value={inputSubject}
-        onChangeFunc={event => setInputSubject(event.target.value)} />
-
-      <div className="form-field">
-        <label for="contact-form-message">Enter your message</label>
-        <textarea type="text"
-          name="name"
-          id="contact-form-message"
-          cols="30"
-          rows="6"
-          onChange={event => setUserText(event.target.value)}>
-        </textarea>
+      <div className="linkedin">
+        <img src={Linkedin} className="linkedin" alt="LinkedIn"></img>
+        <p>My LinkedIn profile – <a href="https://www.linkedin.com/in/tetiana-rabiievska">CLICK</a></p>
       </div>
-      {messageBool && (
-        <div className="userMessage">{`Thank you ${inputName} from ${inputSubject}{" "}
-        for contacting me! I'll get back to you on your email ${inputEmail} and your message:{" "}
-        ${getUserText}`}</div>
-      )}
-      <div className="form-field">
-        <button onClick={showMessage} className="btn" target="_blank" rel="noopener noreferrer">Send Mail</button>
+      <div className="github">
+        <img src={Github} className="github" alt="GitHub"></img>
+        <p>My GitHub profile – <a href="https://github.com/atranarta">CLICK</a></p>
       </div>
     </div>
   )
