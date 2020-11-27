@@ -11,13 +11,15 @@ const Contact = () => {
         text="Contact me"
       />
       <h4>Get In Touch</h4>
-      <div className="linkedin">
-        <img src={Linkedin} className="linkedin" alt="LinkedIn"></img>
-        <p>My LinkedIn profile – <a href="https://www.linkedin.com/in/tetiana-rabiievska">CLICK</a></p>
-      </div>
-      <div className="github">
-        <img src={Github} className="github" alt="GitHub"></img>
-        <p>My GitHub profile – <a href="https://github.com/atranarta">CLICK</a></p>
+      <div className="contact-container">
+        <a className="btn" href="https://www.linkedin.com/in/tetiana-rabiievska">
+          <img src={Linkedin} alt="LinkedIn"></img>
+          LinkedIn
+        </a>
+        <a className="btn" href="https://github.com/atranarta">
+          <img src={Github} alt="LinkedIn"></img>
+          GitHub
+        </a>
       </div>
     </div>
   )

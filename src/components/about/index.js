@@ -13,7 +13,6 @@ const About = () => (
     <ul>
       <AboutList />
     </ul>
-    <a className="btn" href="https://www.linkedin.com/in/tetiana-rabiievska/">See my LinkedIn</a>
   </div>
 );
 

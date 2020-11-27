@@ -1,39 +1,35 @@
 #contact {
+  .contact-container {
 
-  .form-field {
-    margin-top: 30px;
-    position: relative;
+    .btn {
+      margin-right: 1rem;
+      position: relative;
+      padding-left: 50px;
 
-    label {
-      position: absolute;
-      left: 15px;
-      top: -13px;
-      background: $dark-green;
-      color: #FFF;
-      -webkit-transition: all .4s ease-out;
-      transition: all .4s ease-out;
-      pointer-events: none;
-      padding: 0 10px;
-      font-size: .94rem;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
     }
 
-    input,
-    textarea {
-      border: 1px solid $dark-green;
-      font-size: 1rem;
-      height: 50px;
-      padding: 0 15px;
-    }
+    @media (max-width: 500px) {
+      .btn {
+        padding-left: 40px;
 
-    textarea {
-      height: 190px;
-      padding: 10px 15px;
+        img {
+          width: 15px;
+          height: 15px;
+          top: 12px;
+          left: 12px;
+        }
+      }
     }
-  }
-
-  .userMessage {
-    margin: 20px 10px;
-    padding: 10px;
-    border: 3px solid $dark-green;
   }
 }

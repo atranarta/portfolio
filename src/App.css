@@ -656,37 +656,31 @@ aside nav ul li a:hover {
   transition: transform 0.5s;
 }
 
-#contact .form-field {
-  margin-top: 30px;
+#contact .contact-container .btn {
+  margin-right: 1rem;
   position: relative;
+  padding-left: 50px;
 }
-#contact .form-field label {
+#contact .contact-container .btn:last-child {
+  margin-right: 0;
+}
+#contact .contact-container .btn img {
+  width: 20px;
+  height: 20px;
   position: absolute;
+  top: 15px;
   left: 15px;
-  top: -13px;
-  background: #275129;
-  color: #FFF;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  pointer-events: none;
-  padding: 0 10px;
-  font-size: 0.94rem;
 }
-#contact .form-field input,
-#contact .form-field textarea {
-  border: 1px solid #275129;
-  font-size: 1rem;
-  height: 50px;
-  padding: 0 15px;
-}
-#contact .form-field textarea {
-  height: 190px;
-  padding: 10px 15px;
-}
-#contact .userMessage {
-  margin: 20px 10px;
-  padding: 10px;
-  border: 3px solid #275129;
+@media (max-width: 500px) {
+  #contact .contact-container .btn {
+    padding-left: 40px;
+  }
+  #contact .contact-container .btn img {
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 12px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
